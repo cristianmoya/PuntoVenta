@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03D4FF77-1248-4A7E-BD43-CED702EF21DA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PL_VetSpa</RootNamespace>
+    <AssemblyName>PL_VetSpa</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_Cita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_Cita.Designer.cs">
+      <DependentUpon>frm_Cita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_Diagnostico_Cita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_Diagnostico_Cita.Designer.cs">
+      <DependentUpon>frm_Diagnostico_Cita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_Examen_Fisico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_Examen_Fisico.Designer.cs">
+      <DependentUpon>frm_Examen_Fisico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_Exp_Duen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_Exp_Duen.Designer.cs">
+      <DependentUpon>frm_Exp_Duen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_Exp_Paciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_Exp_Paciente.Designer.cs">
+      <DependentUpon>frm_Exp_Paciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_Hitoria_Clinica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_Hitoria_Clinica.Designer.cs">
+      <DependentUpon>frm_Hitoria_Clinica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_List_Citas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_List_Citas.Designer.cs">
+      <DependentUpon>frm_List_Citas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_List_Diag_Cita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_List_Diag_Cita.Designer.cs">
+      <DependentUpon>frm_List_Diag_Cita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_List_Examen_Fisico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_List_Examen_Fisico.Designer.cs">
+      <DependentUpon>frm_List_Examen_Fisico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_List_Exp_Duen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_List_Exp_Duen.Designer.cs">
+      <DependentUpon>frm_List_Exp_Duen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_List_Exp_Paciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_List_Exp_Paciente.Designer.cs">
+      <DependentUpon>frm_List_Exp_Paciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_List_Historial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Consulta\frm_List_Historial.Designer.cs">
+      <DependentUpon>frm_List_Historial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Facturacion\frm_Fact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Facturacion\frm_Fact.Designer.cs">
+      <DependentUpon>frm_Fact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Facturacion\frm_List_Fact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Facturacion\frm_List_Fact.Designer.cs">
+      <DependentUpon>frm_List_Fact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Inventarios\frm_Entradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Inventarios\frm_Entradas.Designer.cs">
+      <DependentUpon>frm_Entradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Inventarios\frm_Listar_Salid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Inventarios\frm_Listar_Salid.Designer.cs">
+      <DependentUpon>frm_Listar_Salid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Inventarios\frm_List_Entradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Inventarios\frm_List_Entradas.Designer.cs">
+      <DependentUpon>frm_List_Entradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Inventarios\frm_List_Prod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Inventarios\frm_List_Prod.Designer.cs">
+      <DependentUpon>frm_List_Prod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Inventarios\frm_Salid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Inventarios\frm_Salid.Designer.cs">
+      <DependentUpon>frm_Salid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Generales\frm_Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Generales\frm_Inicio.Designer.cs">
+      <DependentUpon>frm_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Generales\frm_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Generales\frm_Menu.Designer.cs">
+      <DependentUpon>frm_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Inventarios\frm_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Inventarios\frm_Producto.Designer.cs">
+      <DependentUpon>frm_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pantallas\Cat_Mant\Seguridad\frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cat_Mant\Seguridad\frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Consulta\frm_Cita.resx">
+      <DependentUpon>frm_Cita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Consulta\frm_Diagnostico_Cita.resx">
+      <DependentUpon>frm_Diagnostico_Cita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Consulta\frm_Examen_Fisico.resx">
+      <DependentUpon>frm_Examen_Fisico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Consulta\frm_Exp_Duen.resx">
+      <DependentUpon>frm_Exp_Duen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Consulta\frm_Exp_Paciente.resx">
+      <DependentUpon>frm_Exp_Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Consulta\frm_Hitoria_Clinica.resx">
+      <DependentUpon>frm_Hitoria_Clinica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Consulta\frm_List_Citas.resx">
+      <DependentUpon>frm_List_Citas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Consulta\frm_List_Diag_Cita.resx">
+      <DependentUpon>frm_List_Diag_Cita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Consulta\frm_List_Examen_Fisico.resx">
+      <DependentUpon>frm_List_Examen_Fisico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Consulta\frm_List_Exp_Duen.resx">
+      <DependentUpon>frm_List_Exp_Duen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Consulta\frm_List_Exp_Paciente.resx">
+      <DependentUpon>frm_List_Exp_Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Consulta\frm_List_Historial.resx">
+      <DependentUpon>frm_List_Historial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Facturacion\frm_Fact.resx">
+      <DependentUpon>frm_Fact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Facturacion\frm_List_Fact.resx">
+      <DependentUpon>frm_List_Fact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Inventarios\frm_Entradas.resx">
+      <DependentUpon>frm_Entradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Inventarios\frm_Listar_Salid.resx">
+      <DependentUpon>frm_Listar_Salid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Inventarios\frm_List_Entradas.resx">
+      <DependentUpon>frm_List_Entradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Inventarios\frm_List_Prod.resx">
+      <DependentUpon>frm_List_Prod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Inventarios\frm_Salid.resx">
+      <DependentUpon>frm_Salid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Generales\frm_Inicio.resx">
+      <DependentUpon>frm_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Generales\frm_Menu.resx">
+      <DependentUpon>frm_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Inventarios\frm_Producto.resx">
+      <DependentUpon>frm_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Pantallas\Cat_Mant\Seguridad\frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL_VetSpa\BLL_VetSpa.csproj">
+      <Project>{f1c9e0cc-afc2-4faa-a0bd-e176698cfd96}</Project>
+      <Name>BLL_VetSpa %28BLL_VetSpa\BLL_VetSpa%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL_VetSpa\DAL_VetSpa.csproj">
+      <Project>{62b93703-0d8e-4bdc-bba6-fa9436ce7bd1}</Project>
+      <Name>DAL_VetSpa %28DAL_VetSpa\DAL_VetSpa%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recursos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

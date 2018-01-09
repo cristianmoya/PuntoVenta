@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1C9E0CC-AFC2-4FAA-A0BD-E176698CFD96}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL_VetSpa</RootNamespace>
+    <AssemblyName>BLL_VetSpa</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BD\cls_BD_BLL.cs" />
+    <Compile Include="Cat_Mant\Consulta\cls_Cita_BLL.cs" />
+    <Compile Include="Cat_Mant\Consulta\cls_Diagnostico_BLL.cs" />
+    <Compile Include="Cat_Mant\Consulta\cls_Exp_Duen_BLL.cs" />
+    <Compile Include="Cat_Mant\Consulta\cls_Exp_Pac_BLL.cs" />
+    <Compile Include="Cat_Mant\Facturacion\cls_Factura_BLL.cs" />
+    <Compile Include="Cat_Mant\Inventarios\cls_Entrada_Prod_BLL.cs" />
+    <Compile Include="Cat_Mant\Inventarios\cls_Producto_BLL.cs" />
+    <Compile Include="Cat_Mant\Inventarios\cls_Salidas_BLL.cs" />
+    <Compile Include="Cat_Mant\Seguridad\cls_Login_BLL.cs" />
+    <Compile Include="Cat_Mant\Seguridad\cls_Usuario_DAL.cs" />
+    <Compile Include="Generales\cls_Generales_BLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL_VetSpa\DAL_VetSpa.csproj">
+      <Project>{62b93703-0d8e-4bdc-bba6-fa9436ce7bd1}</Project>
+      <Name>DAL_VetSpa %28DAL_VetSpa\DAL_VetSpa%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
